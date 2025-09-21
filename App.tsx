@@ -13,10 +13,7 @@ type SectionType = 'Smart script' | 'Advance script';
 const App: React.FC = () => {
 
   const [isActive, setIsActive] = useState<SectionType>('Smart script');
-
-
   const section: SectionType[] = ['Smart script', 'Advance script'];
-
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
@@ -39,14 +36,18 @@ const App: React.FC = () => {
               </TouchableOpacity>
             ))}
           </View>
-          <View style={{ flex: 1, marginTop: -300, paddingLeft:8,
+          <View 
+          style={{ 
+          flex: 1,
+          marginTop: -300,
+          paddingLeft:8,
           paddingRight:8, }}>
             {isActive==="Smart script"?<SmarctScript/>:<AdvanceScript/>}
           </View>
         </View>
         
-<View>
-                      <Footer/>
+            <View>
+            <Footer/>
                   </View>
       </SafeAreaView>
     </SafeAreaProvider>

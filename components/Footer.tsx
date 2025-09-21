@@ -1,7 +1,6 @@
 import { View,Image, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import capcut from '../assets/capcut2.png'
-import mob from '../assets/mob2.png'
+
 const Footer = () => {
   return (
     <View style={styles.container}>
@@ -9,7 +8,7 @@ const Footer = () => {
         <Image source={require('../assets/capcut2.png')} style={styles.img}/>
       </View>
       <View style={styles.wrapper}>
-        <Text style={{color:"#daccccff"}}>Created By</Text>
+        <Text style={{color:"#daccccff"}}>Curated By</Text>
         <Image source={require('../assets/mob2.png')} style={styles.img}/>
       </View>
     </View>
